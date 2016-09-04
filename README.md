@@ -12,6 +12,6 @@ repo sync
 Finally to build:
 ````bash
 . build/envsetup.sh
-lunch -> (device number)
+lunch                 -> (device number)
 make -j8 otapackage
 ```
