@@ -4,8 +4,11 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
     <default revision="refs/tags/android-7.0.0_r1" remote="aosp" sync-j="16" />
+    
+    <remote  name="github"
+           fetch="https://github.com/" />
 	
-	<remote name="opengapps" fetch="https://github.com/opengapps/"  />
+    <remote name="opengapps" fetch="https://github.com/opengapps/"  />
 
     <remote name="aosp-msm8960"
 	fetch="https://github.com/aosp-msm8960"
@@ -330,12 +333,12 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="aosp-msm8960" revision="nougat-release" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="github" revision="nougat-release" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
   <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="aosp-msm8960" revision="nougat-release" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="github" revision="nougat-release" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
@@ -501,10 +504,10 @@
   
   <!-- Devices -->
   <project path="device/lge/geehrc" name="android_device_lge_geehrc" remote="aosp-msm8960" revision="n" />
-  <project path="device/asus/flo" name="android_device_asus_flo" remote="aosp-msm8960" revision="nougat-release" />
-  <project path="device/asus/flo-kernel" name="android_device_asus_flo-kernel" remote="aosp-msm8960" revision="nougat-release" />
-  <project path="device/asus/deb" name="android_device_asus_deb" remote="aosp-msm8960" revision="nougat-release" />
-  <project path="device/lge/mako" name="android_device_lge_mako" remote="aosp-msm8960" revision="nougat-release" />
+  <project path="device/asus/flo" name="android_device_asus_flo" remote="github" revision="nougat-release" />
+  <project path="device/asus/flo-kernel" name="android_device_asus_flo-kernel" remote="github" revision="nougat-release" />
+  <project path="device/asus/deb" name="android_device_asus_deb" remote="github" revision="nougat-release" />
+  <project path="device/lge/mako" name="android_device_lge_mako" remote="github" revision="nougat-release" />
 	
   <!-- Blobs -->
   <project path="vendor" name="android_vendor" remote="aosp-msm8960" revision="n" />
