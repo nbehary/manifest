@@ -4,6 +4,8 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
     <default revision="refs/tags/android-7.0.0_r1" remote="aosp" sync-j="16" />
+	
+	<remote name="opengapps" fetch="https://github.com/opengapps/"  />
 
     <remote name="aosp-msm8960"
 	fetch="https://github.com/aosp-msm8960"
@@ -506,6 +508,11 @@
 	
   <!-- Blobs -->
   <project path="vendor" name="android_vendor" remote="aosp-msm8960" revision="n" />
+  
+  <!-- OpenGapps -->
+  <project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
   
   
 </manifest>
