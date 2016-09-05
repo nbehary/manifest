@@ -510,7 +510,7 @@
   <project path="device/lge/mako" name="aosp-msm8960/android_device_lge_mako" remote="github" revision="nougat-release" />
 	
   <!-- Blobs -->
-  <project path="vendor" name="aosp-msm8960/android_vendor" remote="github" revision="n" />
+  <project path="vendor" name="aosp-msm8960/android_vendor" remote="github" revision="nougat-release" />
   
   <!-- OpenGapps -->
   <project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
