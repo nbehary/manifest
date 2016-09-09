@@ -8,8 +8,6 @@
     <remote  name="github"
            fetch="https://github.com/" />
            
-    <remote name="opengapps" fetch="https://github.com/opengapps/"  />
-
     <remote name="aosp-msm8960"
 	fetch="https://github.com/aosp-msm8960"
 	sync-j="16"/>
@@ -509,10 +507,5 @@
 	
   <!-- Blobs -->
   <project path="vendor" name="aosp-msm8960/android_vendor" remote="github" revision="nougat-release" />
-  
-  <!-- OpenGapps -->
-  <project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
   
 </manifest>
