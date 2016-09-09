@@ -511,7 +511,7 @@
   <project path="vendor" name="aosp-msm8960/android_vendor" remote="github" revision="nougat-release" />
   
   <!-- OpenGapps -->
-  <project path="vendor/google/build" name="aosp_build" revision="fix_nougat" remote="opengapps" />
+  <project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
   
