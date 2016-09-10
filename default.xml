@@ -276,7 +276,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="aosp-msm8960/android_frameworks_base" remote="github" revision="nougat" />
+  <project path="frameworks/base" name="nbehary/android_frameworks_base" remote="github" revision="nougat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -500,7 +500,7 @@
   
   <!-- Devices -->
   <project path="device/lge/geehrc" name="aosp-msm8960/android_device_lge_geehrc" remote="github" revision="n" />
-  <project path="device/asus/flo" name="aosp-msm8960/android_device_asus_flo" remote="github" revision="nougat-release" />
+  <project path="device/asus/flo" name="nbehary/android_device_asus_flo" remote="github" revision="nougat-release" />
   <project path="device/asus/flo-kernel" name="aosp-msm8960/android_device_asus_flo-kernel" remote="github" revision="nougat-release" />
   <project path="device/asus/deb" name="aosp-msm8960/android_device_asus_deb" remote="github" revision="nougat-release" />
   <project path="device/lge/mako" name="aosp-msm8960/android_device_lge_mako" remote="github" revision="nougat-release" />
