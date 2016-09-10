@@ -12,6 +12,10 @@
 	fetch="https://github.com/aosp-msm8960"
 	sync-j="16"/>
 	
+    <remote name="nbehary"
+	fetch="https://github.com/nbehary"
+	sync-j="16"/>
+	
     <project path="build" name="nbehary/android_build" groups="pdk" remote="github" revision="n" >
 	<copyfile src="core/root.mk" dest="Makefile" />
     </project>
@@ -468,7 +472,7 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
-  <project path="system/core" name="android_system_core" remote="aosp-msm8960" revision="n" />
+  <project path="system/core" name="android_system_core" remote="nbehary" revision="n" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
@@ -478,7 +482,7 @@
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="aosp-msm8960" revision="n" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="nbehary" revision="n" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" />
