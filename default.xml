@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
+	
+
+	
+	<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -7,16 +11,18 @@
     
     <remote  name="github"
            fetch="https://github.com/" />
-           
+	
+	<remote name="nbehary"
+		fetch="https://github.com/nbehary"
+		sync-j="16"/>
+	
+    <remote name="opengapps" fetch="https://github.com/opengapps/"  />
+
     <remote name="aosp-msm8960"
 	fetch="https://github.com/aosp-msm8960"
 	sync-j="16"/>
 	
-    <remote name="nbehary"
-	fetch="https://github.com/nbehary"
-	sync-j="16"/>
-	
-    <project path="build" name="nbehary/android_build" groups="pdk" remote="github" revision="n" >
+    <project path="build" name="android_build" groups="pdk" remote="aosp-msm8960" revision="n" >
 	<copyfile src="core/root.mk" dest="Makefile" />
     </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -281,7 +287,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="nbehary/android_frameworks_base" remote="github" revision="nougat" />
+  <project path="frameworks/base" name="aosp-msm8960/android_frameworks_base" remote="github" revision="nougat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -472,7 +478,7 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
-  <project path="system/core" name="android_system_core" remote="nbehary" revision="n" />
+  <project path="system/core" name="android_system_core" remote="aosp-msm8960" revision="n" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
@@ -482,7 +488,7 @@
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="nbehary" revision="n" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="aosp-msm8960" revision="n" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" />
@@ -505,7 +511,7 @@
   
   <!-- Devices -->
   <project path="device/lge/geehrc" name="aosp-msm8960/android_device_lge_geehrc" remote="github" revision="n" />
-  <project path="device/asus/flo" name="nbehary/android_device_asus_flo" remote="github" revision="nougat-release" />
+  <project path="device/asus/flo" name="aosp-msm8960/android_device_asus_flo" remote="github" revision="nougat-release" />
   <project path="device/asus/flo-kernel" name="aosp-msm8960/android_device_asus_flo-kernel" remote="github" revision="nougat-release" />
   <project path="device/asus/deb" name="aosp-msm8960/android_device_asus_deb" remote="github" revision="nougat-release" />
   <project path="device/lge/mako" name="aosp-msm8960/android_device_lge_mako" remote="github" revision="nougat-release" />
