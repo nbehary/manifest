@@ -508,7 +508,7 @@
   <!-- Devices -->
   <project path="device/lge/geehrc" name="aosp-msm8960/android_device_lge_geehrc" remote="github" revision="n" />
   <project path="device/asus/flo" name="aosp-msm8960/android_device_asus_flo" remote="github" revision="nougat-release" />
-  <project path="device/asus/flo-kernel" name="aosp-msm8960/android_device_asus_flo-kernel" remote="github" revision="nougat-release" />
+  <project path="device/asus/flo-kernel" name="android_device_asus_flo-kernel" remote="nbehary" revision="nougat-release" />
   <project path="device/asus/deb" name="aosp-msm8960/android_device_asus_deb" remote="github" revision="nougat-release" />
   <project path="device/lge/mako" name="aosp-msm8960/android_device_lge_mako" remote="github" revision="nougat-release" />
 	
