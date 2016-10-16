@@ -18,7 +18,7 @@
 	fetch="https://github.com/aosp-msm8960"
 	sync-j="16"/>
 	
-    <project path="build" name="android_build" groups="pdk" remote="nbehary" revision="n" >
+    <project path="build" name="android_build" groups="pdk" remote="nbehary" revision="nougat" >
 	<copyfile src="core/root.mk" dest="Makefile" />
     </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
