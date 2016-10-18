@@ -18,6 +18,9 @@
 	fetch="https://github.com/aosp-msm8960"
 	sync-j="16"/>
 	
+	<remote name="SimpleAosp"
+            fetch="https://github.com/SAOSP-N/" /> 
+	
     <project path="build" name="android_build" groups="pdk" remote="nbehary" revision="n" >
 	<copyfile src="core/root.mk" dest="Makefile" />
     </project>
@@ -346,7 +349,7 @@
   <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
   <project path="hardware/qcom/gps" name="aosp-msm8960/android_hardware_qcom_gps" remote="github" revision="nougat-release" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" remote="nbehary" revision="nougat-release" />
+  <project path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom" remote="SimpleAosp" revision="N" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" />
