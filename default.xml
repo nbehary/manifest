@@ -23,7 +23,7 @@
 
 
 
-  <project path="build" name="android_build" groups="pdk" remote="nbehary" revision="n" >
+  <project path="build" name="android_build" groups="pdk" remote="nbehary" revision="n-mr1" >
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
 
