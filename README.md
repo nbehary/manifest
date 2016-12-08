@@ -1,9 +1,9 @@
-The Android Open Source Project Nougat 7.0.0_r6
+The Android Open Source Project Nougat 7.1.1_r4
 ===========
 
 To initialize your local repository using the AOSP trees, use a command like this:
 ````bash
-repo init -u git://github.com/nbehary/manifest.git -b master
+repo init -u git://github.com/nbehary/manifest.git -b n-mr1
 ```
 Then to sync up:
 ````bash
